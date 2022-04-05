@@ -34,8 +34,22 @@
 // val4.address = 'address';
 // console.log(val4);
 
-const val5 = ["dog", "cat"];
-val5[0] = "bird";
-val5.push("monkey");
+// const val5 = ["dog", "cat"];
+// val5[0] = "bird";
+// val5.push("monkey");
 
-console.log(val5);
+// console.log(val5);
+
+// テンプレート文字列
+const name = "tak";
+const age = 36;
+
+// [私の名前はtakです。年齢は36です。]
+
+// 従来
+const message1 = "私の名前は" + name + "です。年齢は" + age + "です。";
+console.log(message1);
+
+// テンプレート文字列
+const message2 = `私の名前は${name}です。年齢は${age}です。`;
+console.log(message2);
